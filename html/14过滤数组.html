@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [
+            {
+                name:'aaaa',
+                age:'23'
+            },
+            {
+                name:'aaaa',
+                age:'13'
+            },
+            {
+                name:'aaaa',
+                age:'23'
+            },
+            {
+                name:'aaaa',
+                age:'23'
+            },
+            {
+                name:'aaaa',
+                age:'53'
+            },
+            {
+                name:'aaaa',
+                age:'23'
+            },
+            {
+                name:'aaaa',
+                age:'23'
+            }
+        ]
+        //age 大于33岁的数据 for 循环
+        var res = []
+        for(var i=0;i<arr.length;i++){
+            if(arr[i].age>33){
+                res.push(arr[i])
+            }
+        }  
+        //方法二
+        //filter(过滤 返回过滤后的新数组
+        var res = arr.filter()
+    </script>
+</body>
+</html>

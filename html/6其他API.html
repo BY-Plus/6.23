@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,2,3,4]
+        var arr1 = ['2','tt']
+        var res = ['a','a'];
+        //concat()合并数组 并返回回并后的数组
+       
+       // 将arr arr1 res 数组全部合并到arr
+       //arr 数组长度变化 ，合并成三个的长度
+        arr = arr.concat(arr1) //双重赋值
+        arr = arr.concat(res)
+        console.log(arr)
+
+
+
+
+        //arr.reverse() 颠倒数组
+        var reverseArr = arr1.reverse();
+        console.log(reverseArr)
+
+        var arr2 = [1,2,3,4,5,6,7,8,9];
+        //arr.slice(starIndex.endIndex)  返回数组片段
+        //参一：从哪个索引值开始
+        //参二：到哪个索引值结束，包含starIndex,不包含endIndex
+        var res2 = arr2.slice(3,6);
+        console.log(res2)
+    </script>
+</body>
+</html>

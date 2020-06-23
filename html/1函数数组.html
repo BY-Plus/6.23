@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    //99乘法表
+    //乘法表， 外面执行一次 里面执行多次，里面for执行的次数是递减的，变化的
+    //存在两个变量,要么在语句一，要么在语句二
+    //
+
+    for(var i = 1;i<10;i++){
+       
+        for(var j = i;j<10;j++){
+            console.log(`${i} x ${j}=${i*j}`);
+            
+            
+        }
+    }
+
+//---------------------------------------------------
+    //数据处理
+    // 遍历下面的数据 输出对应的 商品列表结构；图片自己找
+    var data=[
+        {id:1001,icon:"img/1.png",name:"餐饮0",num:1,price:10},
+        {id:1002,icon:"img/2.png",name:"餐饮1",num:1,price:20},
+        {id:1003,icon:"img/3.png",name:"餐饮2",num:1,price:30},
+        {id:1004,icon:"img/4.png",name:"餐饮3",num:1,price:40},
+        {id:1005,icon:"img/5.png",name:"餐饮4",num:1,price:50},
+        {id:1006,icon:"img/6.png",name:"餐饮5",num:1,price:60},
+        {id:1007,icon:"img/7.png",name:"餐饮6",num:1,price:70},
+        {id:1008,icon:"img/8.png",name:"餐饮7",num:1,price:80},
+        {id:1009,icon:"img/9.png",name:"餐饮8",num:1,price:90},
+        {id:1010,icon:"img/10.png",name:"餐饮9",num:1,price:100}
+    ];
+    for(var i = 0,len=data.length;i<len;i++){
+        document.write(``)
+    }
+
+
+
+
+//需要掌握的
+
+    var obj = {
+        name:'ta',
+        img:"http",
+        age:14
+    }
+
+    //'name':"ta",img:"http",age:12'
+    var res = ''
+    for(var x in obj){
+        res +=(x+''+obj[x]+',')
+    }
+    //截取
+    res = res.slice(0,res.length-1)
+    console.log(res)
+
+    
+    </script>
+</body>
+</html>
